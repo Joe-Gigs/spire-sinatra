@@ -6,6 +6,7 @@ gem 'activerecord'
 gem 'sinatra-activerecord', require: %w(sinatra/activerecord)
 gem 'sqlite3'
 gem 'rake'
+gem 'carrierwave', '~> 1.0'
 
 group :development do 
 	gem 'shotgun'
