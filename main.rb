@@ -14,7 +14,25 @@ end
 #routes
 get '/' do 
 	@cards = Card.all
+	@images = Image.all
 	erb :index
+end
+
+post "/" do
+
+	#Create new Image Model
+	img = Image.new
+
+	#Save the data from the request
+	img.file    = params[:file] 
+	img.caption = "This is the caption" 
+
+	#Save
+	img.save!
+
+	#Redirect to view
+	redirect to("/")
+
 end 
 
 get '/cards/:id' do 
@@ -25,5 +43,7 @@ end
 get '/admin' do 
   erb :admin
 end
+
+
 
 
