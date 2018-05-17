@@ -26,6 +26,7 @@ GEM
     mime-types-data (3.2016.0521)
     minitest (5.11.3)
     mustermann (1.0.2)
+    pg (0.18.4)
     rack (2.0.5)
     rack-protection (2.0.1)
       rack
@@ -53,6 +54,7 @@ DEPENDENCIES
   activerecord
   carrierwave (~> 1.0)
   decisiontree (~> 0.5.0)
+  pg (~> 0.18.4)
   rake
   shotgun
   sinatra (~> 2.0, >= 2.0.1)

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_15_181504) do
+ActiveRecord::Schema.define(version: 2018_05_16_233947) do
 
   create_table "cards", force: :cascade do |t|
     t.string "title"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2018_05_15_181504) do
     t.string "energy"
     t.string "description"
     t.string "rarity"
+    t.text "images"
   end
 
 end

@@ -1,4 +1,4 @@
-cards = Card.create([
+cards = [
   #Ironclad
   {title: 'Bash', belongs_to: 'Ironclad', type_of_card: 'Attack', energy: '2', description: 'Deal 8(10) damage. Apply 2(3) Vulnerable.', rarity: 'Basic'},
   {title: 'Defend', belongs_to: 'Ironclad', type_of_card: 'Skill', energy: '1', description: 'Gain 5(8) Block.', rarity: 'Basic'},
@@ -75,10 +75,12 @@ cards = Card.create([
   {title: 'Juggernaut', belongs_to: 'Ironclad', type_of_card: 'Skill', energy: '2', description: 'Whenever you gain Block, deal 3(5) damage to ALL enemies.', rarity: 'Rare'},
   {title: 'Limit Break', belongs_to: 'Ironclad', type_of_card: 'Skill', energy: '1', description: 'Double your Strength. Exhaust(Do not Exhaust).', rarity: 'Rare'},
   {title: 'Offering', belongs_to: 'Ironclad', type_of_card: 'Skill', energy: '0', description: 'Lose 4 HP. Gain 2 energy. Draw 3(5) cards. Exhaust.', rarity: 'Rare'},
-  {title: 'Reaper', belongs_to: 'Ironclad', type_of_card: 'Attack', energy: '2', description: 'Deal 4(5) damage to ALL enemies. Heal for unBlocked damage. Exhaust.', rarity: 'Rare'},
-])
+  {title: 'Reaper', belongs_to: 'Ironclad', type_of_card: 'Attack', energy: '2', description: 'Deal 4(5) damage to ALL enemies. Heal for unBlocked damage. Exhaust.', rarity: 'Rare'}
+]
 
-
+cards.each do |c| 
+  Card.create(c)
+end
 
 
 
