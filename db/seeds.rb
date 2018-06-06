@@ -82,7 +82,13 @@ cards.each do |c|
   Card.create(c)
 end
 
+images = [
+  {file:'public/images/Ironclad_cards/R-bash.png'}
 
+]
 
+images.each do |i|
+  Image.create(i)
+end
 
-
+p Dir.pwd

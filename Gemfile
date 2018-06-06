@@ -7,6 +7,8 @@ gem 'sinatra-activerecord', require: %w(sinatra/activerecord)
 gem 'sqlite3'
 gem 'rake'
 gem 'carrierwave', '~> 1.0'
+gem 'json', '~> 1.8', '>= 1.8.3'
+gem 'rest-client', '~> 1.8'
 
 group :development do 
 	gem 'shotgun'

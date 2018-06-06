@@ -25,7 +25,7 @@ post "/" do
 
 	#Save the data from the request
 	img.file    = params[:file] 
-	img.caption = "This is the caption" 
+	
 
 	#Save
 	img.save!
@@ -43,6 +43,7 @@ end
 get '/admin' do 
   erb :admin
 end
+
 
 
 

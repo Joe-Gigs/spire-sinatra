@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_17_171242) do
+ActiveRecord::Schema.define(version: 2018_05_17_210641) do
 
   create_table "cards", force: :cascade do |t|
     t.string "title"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2018_05_17_171242) do
     t.string "description"
     t.string "rarity"
     t.string "file"
+    t.integer "image_id"
   end
 
   create_table "images", force: :cascade do |t|
